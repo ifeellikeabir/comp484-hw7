@@ -5,18 +5,63 @@
 # - color 4
 */
 
+/* Box Model Fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 /* Global styles 
 ------------------------------------*/
 body {
     /*background: lightblue;*/
+    /*background: lightblue;*/
+    margin: 0;
 }
 
 
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+ padding: 50px;
+ overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
 /* Header & Footer 
 ------------------------------------*/
 
+h2 {
+    margin-top: 0;
+}
 
+footer {
+    text-align: center;
+}
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+.profile-img {
+    border-radius: 50%;
+}
 
+header h1, header h2 {
+    margin: 0;
+}
 /* Work Experience
 ------------------------------------*/
 
