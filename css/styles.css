@@ -1,32 +1,20 @@
 /* Color Palette
-# - color 1
-# - color 2
-# - color 3
-# - color 4
+#1D3557 - Dark Blue
+#457B9D - Medium Blue
+#A8DADC - Light Blue
+#F1FAEE - Off White
+
 */
 
-/* Box Model Fix */
+/* Global styles 
+------------------------------------*/
+
 html {
     box-sizing: border-box;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
-}
-/* Global styles 
-------------------------------------*/
-body {
-    /*background: lightblue;*/
-    /*background: lightblue;*/
-    margin: 0;
-}
-
-
-.content-wrap {
-    max-width: 950px;
-    margin: 0 auto;
- padding: 50px;
- overflow: hidden;
 }
 
 .column-narrow {
@@ -41,31 +29,89 @@ body {
     float: left;
     min-height: 225px;
 }
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+padding: 50px;
+}
+body {
+    margin: 0;
+    background-color: #F1FAEE;
+    font-family: "Roboto", sans-serif;
+}
+header, main section, footer {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
 /* Header & Footer 
 ------------------------------------*/
 
-h2 {
-    margin-top: 0;
+header, footer {
+    background-color: #1D3557;
+    color: #F1FAEE;
 }
 
-footer {
-    text-align: center;
-}
-.contact-info a {
-    padding: 10px;
-    display: inline-block;
-}
+
+
+
 .profile-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 30%;
     border-radius: 50%;
 }
 
-header h1, header h2 {
-    margin: 0;
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
 }
+
+
+
+
 /* Work Experience
 ------------------------------------*/
+section {
+    background-color: #A8DADC;
+}
 
 
 
 /* Education
 ------------------------------------*/
+section:last-of-type {
+    background-color: #5d8ac9;
+    color: #0f080c;
+}
+footer a {
+    color: #51888c;
+}
+
+footer a:hover {
+    color: #606666;
+}
