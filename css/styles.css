@@ -8,7 +8,31 @@
 
 /* Global styles 
 ------------------------------------*/
+/* Navigation Menu */
+nav {
+    background-color: #1D3557;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #457B9D;
+    border-radius: 5px;
+}
+
+html {
+    scroll-padding-top: 75px;
+}
 html {
     box-sizing: border-box;
 }
@@ -97,7 +121,16 @@ header::after {
 /* Work Experience
 ------------------------------------*/
 section {
-    background-color: #A8DADC;
+    background:
+        linear-gradient(
+            rgba(168, 218, 220, 0.85),
+            rgba(69, 123, 157, 0.85)
+        ),
+        url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
